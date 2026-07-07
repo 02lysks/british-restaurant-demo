@@ -3,100 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thames & Hearth | British Restaurant Demo</title>
+    <title>Rustique York | French Bistro Concept Demo</title>
     <meta
       name="description"
-      content="A polished static concept website demo for a British restaurant."
+      content="A mobile-friendly concept preview for Rustique York, a French bistro near Clifford's Tower."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home">Thames & Hearth</a>
-      <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Rustique York home">
+        <span>Rustique</span>
+        <small>York</small>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
         <a href="#menu">Menu</a>
-        <a href="#reserve">Reserve</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Book</a>
+        <a href="#atmosphere">Atmosphere</a>
+        <a href="#visitor-guide">Visitor Guide</a>
         <a href="#improvements">Improvements</a>
         <a href="#contact">Contact</a>
-        <a href="#visitor-guide">Guide</a>
       </nav>
+
+      <a class="header-cta" href="#reserve">Request a Table</a>
     </header>
 
     <main>
       <section class="hero" id="home">
         <div class="hero-content">
-          <h1>Seasonal British Dining by the Riverside</h1>
+          <h1>Rustique York</h1>
           <p>
-            A warm riverside restaurant concept with clear menus, simple booking
-            and visitor-friendly dining details.
+            French bistro dining on Castlegate, close to Clifford's Tower,
+            presented with a clearer menu, stronger booking path and a more
+            confident first impression for York visitors.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#menu">View Menu</a>
-            <a class="button button-light" href="#reserve">Book a Table</a>
+            <a class="button button-primary" href="#reserve">Request a Table</a>
+            <a class="button button-light" href="#menu">View Sample Menu</a>
           </div>
         </div>
       </section>
 
-      <section class="section" id="menu">
-        <div class="section-heading">
-          <h2>Menu</h2>
-          <p>Simple British favourites for lunch, dinner and weekend visits.</p>
+      <section class="section intro-section" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h2 id="intro-title">A modern first impression for a lively French bistro</h2>
+          <p>
+            This concept preview shows how Rustique York could feel clearer on
+            mobile: guests understand the food, the atmosphere and the location
+            before they decide to book.
+          </p>
         </div>
 
-        <div class="menu-grid">
-          <article class="menu-card">
-            <img src="images/beer-battered-cod.jpg" alt="Beer battered cod with chips" />
-            <div class="menu-card-body">
-              <h3>Beer Battered Cod</h3>
-              <p>Hand-battered cod, chips, mushy peas and tartare sauce.</p>
-              <strong>&pound;18.50</strong>
-            </div>
+        <div class="intro-points" aria-label="Restaurant highlights">
+          <article>
+            <strong>Castlegate, York</strong>
+            <span>Helpful location context for visitors exploring the city centre.</span>
           </article>
-
-          <article class="menu-card">
-            <img src="images/roast-chicken.jpg" alt="Roast chicken supreme" />
-            <div class="menu-card-body">
-              <h3>Roast Chicken Supreme</h3>
-              <p>Roast chicken, thyme jus, roasted vegetables and greens.</p>
-              <strong>&pound;19.50</strong>
-            </div>
+          <article>
+            <strong>French bistro energy</strong>
+            <span>Warm, busy and relaxed, without making the page feel crowded.</span>
           </article>
-
-          <article class="menu-card">
-            <img src="images/sirloin-steak.jpg" alt="British sirloin steak" />
-            <div class="menu-card-body">
-              <h3>British Sirloin Steak</h3>
-              <p>28-day aged sirloin, peppercorn sauce and watercress.</p>
-              <strong>&pound;26.50</strong>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <img src="images/sticky-toffee-pudding.jpg" alt="Sticky toffee pudding" />
-            <div class="menu-card-body">
-              <h3>Sticky Toffee Pudding</h3>
-              <p>Date sponge, toffee sauce and vanilla ice cream.</p>
-              <strong>&pound;8.50</strong>
-            </div>
+          <article>
+            <strong>Booking made visible</strong>
+            <span>A direct table request CTA appears early and stays easy to find.</span>
           </article>
         </div>
       </section>
 
-      <section class="section section-muted" id="reserve">
+      <section class="section section-muted" id="menu">
+        <div class="section-heading">
+          <h2>Clearer Mobile Menu</h2>
+          <p>
+            Example menu layout only. Final dishes, prices and descriptions can
+            be replaced with Rustique's real menu before launch.
+          </p>
+        </div>
+
+        <div class="menu-layout">
+          <div class="menu-photo-card">
+            <img
+              src="images/chef-plating.jpg"
+              alt="Chef plating a sample bistro dish placeholder"
+            />
+            <div>
+              <h3>Designed for quick scanning</h3>
+              <p>
+                Short descriptions, visible prices and clean categories help
+                guests decide without zooming in on a PDF menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-board" aria-label="Sample French bistro menu">
+            <article class="menu-category">
+              <h3>Starters</h3>
+              <div class="menu-row">
+                <div>
+                  <strong>French Onion Soup</strong>
+                  <span>Gruyere toast, slow-cooked onions, rich beef stock.</span>
+                </div>
+                <b>&pound;8.50</b>
+              </div>
+              <div class="menu-row">
+                <div>
+                  <strong>Goat's Cheese Salad</strong>
+                  <span>Warm cheese, leaves, walnuts and house dressing.</span>
+                </div>
+                <b>&pound;9.50</b>
+              </div>
+            </article>
+
+            <article class="menu-category">
+              <h3>Mains</h3>
+              <div class="menu-row">
+                <div>
+                  <strong>Steak Frites</strong>
+                  <span>Grilled steak, fries, watercress and peppercorn sauce.</span>
+                </div>
+                <b>&pound;24.50</b>
+              </div>
+              <div class="menu-row">
+                <div>
+                  <strong>Confit Duck Leg</strong>
+                  <span>Crisp duck, potatoes, seasonal greens and red wine jus.</span>
+                </div>
+                <b>&pound;22.00</b>
+              </div>
+            </article>
+
+            <article class="menu-category">
+              <h3>Desserts &amp; Drinks</h3>
+              <div class="menu-row">
+                <div>
+                  <strong>Creme Brulee</strong>
+                  <span>Vanilla custard, caramelised sugar and fresh berries.</span>
+                </div>
+                <b>&pound;7.50</b>
+              </div>
+              <div class="menu-row">
+                <div>
+                  <strong>French Wine Selection</strong>
+                  <span>By the glass or bottle, explained clearly for tourists.</span>
+                </div>
+                <b>From &pound;7</b>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="reserve">
         <div class="booking-layout">
-          <img
-            class="booking-photo"
-            src="images/reserved-table.jpg"
-            alt="Reserved restaurant table with wine glasses"
-          />
+          <div class="booking-copy">
+            <h2>Make booking the obvious next step</h2>
+            <p>
+              A restaurant website should not make guests hunt for a table.
+              This concept keeps the booking request close to the top, simple
+              on mobile and clear for international visitors.
+            </p>
+            <ul>
+              <li>Visible CTA from the first screen</li>
+              <li>Simple date, time and party-size fields</li>
+              <li>Space for allergies and visitor notes</li>
+            </ul>
+          </div>
 
           <div class="booking-panel">
             <div class="section-heading align-left">
-              <h2>Reserve</h2>
+              <h2>Request a Table</h2>
               <p>
-                This is a concept preview. A working booking request form can be
-                connected for the final website.
+                Concept preview only. This form can be connected to Rustique's
+                real booking process on a final website.
               </p>
             </div>
 
@@ -109,11 +199,6 @@
               <label>
                 Email Address
                 <input type="email" name="email" placeholder="you@example.com" required />
-              </label>
-
-              <label>
-                Phone Number
-                <input type="tel" name="phone" placeholder="+44 7000 000000" />
               </label>
 
               <label>
@@ -145,17 +230,26 @@
                 </select>
               </label>
 
+              <label>
+                Visitor Type
+                <select name="visitor">
+                  <option>Local guest</option>
+                  <option>UK visitor</option>
+                  <option>International visitor</option>
+                </select>
+              </label>
+
               <label class="full-width">
-                Special Requests
+                Notes
                 <textarea
                   name="message"
                   rows="4"
-                  placeholder="Allergies, children, window seat..."
+                  placeholder="Allergies, celebration, children, access needs..."
                 ></textarea>
               </label>
 
               <button class="button button-primary full-width" type="submit">
-                Book a Table
+                Send Booking Request
               </button>
 
               <p class="form-message" id="formMessage" aria-live="polite"></p>
@@ -164,84 +258,137 @@
         </div>
       </section>
 
-      <section class="section" id="gallery">
+      <section class="section atmosphere-section" id="atmosphere">
         <div class="section-heading">
-          <h2>Gallery</h2>
-          <p>Food, dining room details and the atmosphere guests notice first.</p>
+          <h2>Food &amp; Atmosphere</h2>
+          <p>
+            Placeholder images show how food, room details and bistro energy can
+            work together. They are not official Rustique photography.
+          </p>
         </div>
 
-        <div class="gallery-grid">
-          <img src="images/restaurant-front.jpg" alt="Restaurant exterior in London" />
-          <img src="images/dining-room.jpg" alt="Warm British restaurant dining room" />
-          <img src="images/bar.jpg" alt="Restaurant bar with brass lights" />
-          <img src="images/reserved-table.jpg" alt="Reserved table setting" />
-          <img src="images/window-table.jpg" alt="Window table overlooking the Thames" />
-          <img src="images/chef-plating.jpg" alt="Chef plating a dish" />
+        <div class="atmosphere-grid">
+          <article class="feature-image large">
+            <img src="images/restaurant-front.jpg" alt="Generic restaurant exterior placeholder" />
+            <div>
+              <h3>Street-level first impression</h3>
+              <p>Give visitors a confident sense of arrival before they walk in.</p>
+            </div>
+          </article>
+          <article class="feature-image">
+            <img src="images/bar.jpg" alt="Generic bistro bar placeholder" />
+            <div>
+              <h3>Busy bistro warmth</h3>
+              <p>Show the room as lively, warm and worth booking ahead.</p>
+            </div>
+          </article>
+          <article class="feature-image">
+            <img src="images/sirloin-steak.jpg" alt="Sample plated dish placeholder" />
+            <div>
+              <h3>Food that feels immediate</h3>
+              <p>Modern crops help dishes feel current without changing the brand.</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="section section-muted improvements-section" id="improvements">
+      <section class="section section-muted visitor-section" id="visitor-guide">
         <div class="section-heading">
-          <h2>What This Website Improves</h2>
+          <h2>International &amp; Chinese Visitor Guide</h2>
           <p>
-            A stronger restaurant website should help guests decide faster, book
-            with less friction and understand the experience before they arrive.
+            York receives visitors from around the world. This section helps
+            them understand the restaurant quickly without weakening the bistro
+            feel.
+          </p>
+        </div>
+
+        <div class="visitor-grid">
+          <article>
+            <span>Location</span>
+            <h3>Near Clifford's Tower</h3>
+            <p>
+              Simple wording explains that the restaurant is on Castlegate and
+              easy to combine with York city-centre sightseeing.
+            </p>
+          </article>
+          <article>
+            <span>Menu</span>
+            <h3>What to order</h3>
+            <p>
+              Signature dishes can include short plain-English notes for guests
+              who are new to French bistro dining.
+            </p>
+          </article>
+          <article>
+            <span>Booking</span>
+            <h3>Plan ahead</h3>
+            <p>
+              Clear booking prompts reduce uncertainty for tourists visiting at
+              busy lunch and dinner times.
+            </p>
+          </article>
+          <article>
+            <span>Language</span>
+            <h3>Guest confidence</h3>
+            <p>
+              A final version can add Chinese visitor notes, dietary guidance
+              and payment expectations where useful.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section improvements-section" id="improvements">
+        <div class="section-heading">
+          <h2>What This Concept Improves</h2>
+          <p>
+            The goal is not to make a flashy page. The goal is to help a real
+            restaurant look clearer, more modern and easier to book.
           </p>
         </div>
 
         <div class="improvement-grid">
           <article>
             <span>01</span>
-            <h3>Clearer mobile menu</h3>
-            <p>Guests can scan dishes and prices without pinching or searching.</p>
+            <h3>More modern first impression</h3>
+            <p>Guests see a polished bistro identity before they scroll.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Faster booking request</h3>
-            <p>The reservation path is visible early and easy to complete.</p>
+            <h3>Clearer mobile menu</h3>
+            <p>Categories, descriptions and prices are readable on a phone.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Better first impression for tourists</h3>
-            <p>The opening screen shows location, atmosphere and confidence at once.</p>
+            <h3>Stronger booking CTA</h3>
+            <p>The table request path is visible from the hero and booking section.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Stronger food and atmosphere presentation</h3>
-            <p>Food, room details and service style work together instead of feeling separate.</p>
+            <h3>Better York visitor context</h3>
+            <p>Location and nearby landmark context help tourists choose faster.</p>
           </article>
           <article>
             <span>05</span>
-            <h3>Visitor-friendly information for international guests</h3>
-            <p>Helpful travel details are included without making the brand feel less premium.</p>
+            <h3>Richer atmosphere presentation</h3>
+            <p>Food, room and arrival visuals tell one consistent story.</p>
           </article>
         </div>
       </section>
 
-      <section class="section owner-fit-section">
+      <section class="section contact-section" id="contact">
         <div class="section-heading">
-          <h2>Designed for restaurants with</h2>
-        </div>
-
-        <ul class="owner-fit-list">
-          <li>outdated mobile websites</li>
-          <li>hard-to-read menus</li>
-          <li>unclear booking paths</li>
-          <li>weak food presentation</li>
-          <li>limited visitor information</li>
-        </ul>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="section-heading">
-          <h2>Contact</h2>
-          <p>Demo contact details show where real restaurant information would go.</p>
+          <h2>Demo Contact Area</h2>
+          <p>
+            These details show where real restaurant information would sit. They
+            should be replaced with official Rustique details before any launch.
+          </p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-item">
-            <h3>Demo Location</h3>
-            <p>Central London riverside area<br />Replace with the restaurant address</p>
+            <h3>Location Context</h3>
+            <p>Castlegate, York<br />Near Clifford's Tower</p>
           </div>
           <div class="contact-item">
             <h3>Demo Phone</h3>
@@ -253,52 +400,20 @@
           </div>
           <div class="contact-item">
             <h3>Opening Hours</h3>
-            <p>Mon to Sun<br />12:00 - 22:00</p>
+            <p>Example only<br />12:00 - 22:00</p>
           </div>
-        </div>
-      </section>
-
-      <section class="section visitor-section" id="visitor-guide">
-        <div class="section-heading">
-          <h2>International &amp; Chinese Visitor Guide</h2>
-          <p>
-            Clear, practical details for overseas guests who want to book with
-            confidence before arriving in London.
-          </p>
-        </div>
-
-        <div class="visitor-grid">
-          <article>
-            <span>Guide</span>
-            <h3>Arrival Confidence</h3>
-            <p>Guests can see what to expect, where to go and how to book before they arrive.</p>
-          </article>
-          <article>
-            <span>Menu</span>
-            <h3>Menu Clarity</h3>
-            <p>Signature dishes can include simple notes for international and Chinese visitors.</p>
-          </article>
-          <article>
-            <span>Pay</span>
-            <h3>Payment Guidance</h3>
-            <p>Payment expectations can be explained clearly so guests feel prepared.</p>
-          </article>
-          <article>
-            <span>Care</span>
-            <h3>Thoughtful Hospitality</h3>
-            <p>Small comfort details, from drink preferences to dietary notes, can be handled gracefully.</p>
-          </article>
         </div>
       </section>
 
       <section class="section section-muted owner-note-section" id="restaurant-owners">
         <div class="owner-note">
-          <h2>For Restaurant Owners</h2>
+          <h2>For Rustique Restaurant's owner</h2>
           <p>
-            This concept preview is designed for restaurant owners who want a
-            cleaner mobile website, a clearer menu experience, and an easier
-            path for guests to request a table.
+            This is a custom concept preview showing how a cleaner mobile site
+            could present Rustique York's French bistro positioning, menu,
+            booking request and visitor guidance more clearly.
           </p>
+          <a class="button button-primary" href="#home">Back to Top</a>
         </div>
       </section>
     </main>
