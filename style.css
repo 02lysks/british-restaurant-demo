@@ -504,6 +504,10 @@ a {
   text-align: center;
 }
 
+.concept-note {
+  font-size: 15px;
+}
+
 .atmosphere-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -693,6 +697,8 @@ a {
     padding: 8px 0 4px;
     gap: 0;
     border-top: 1px solid var(--border);
+    justify-content: stretch;
+    justify-items: stretch;
   }
 
   .nav.is-open {
@@ -700,6 +706,7 @@ a {
   }
 
   .nav a {
+    width: 100%;
     padding: 12px 0;
     border-bottom: 1px solid var(--border);
     font-size: 16px;
