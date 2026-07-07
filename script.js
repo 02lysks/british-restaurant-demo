@@ -26,7 +26,7 @@ if (bookingForm && formMessage) {
   bookingForm.addEventListener("submit", function (event) {
     event.preventDefault();
     formMessage.textContent =
-      "Thank you. This concept form shows where a real booking request would be sent.";
+      "This previews the booking flow. A final website can send guests to Rustique's real booking process.";
     bookingForm.reset();
   });
 }
